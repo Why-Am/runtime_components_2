@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="53TinXEuzRPJAt2hbhx-">
+    <mxGraphModel dx="896" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Create new configuration file" vertex="1">
+          <mxGeometry height="60" width="130" x="153.25" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-8" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="hlIpUlzBis2L-mcIXATZ-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-9" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Save in repository" vertex="1">
+          <mxGeometry height="50" width="130" x="153.25" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-11" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Configure where the file should be installed and on what platforms" vertex="1">
+          <mxGeometry height="70" width="206.5" x="115" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-16" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Run install script" vertex="1">
+          <mxGeometry height="50" width="140" x="148.25" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-23" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-24" connectable="0" parent="hlIpUlzBis2L-mcIXATZ-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontSize=14;fontColor=#990000;" value="Not yet" vertex="1">
+          <mxGeometry relative="1" x="-0.2457" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-12" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" value="Configuration good?" vertex="1">
+          <mxGeometry height="70" width="187" x="124.75" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Copy files to their correct locations" vertex="1">
+          <mxGeometry height="50" width="130" x="153.25" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-17" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-19" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218.25" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-20" connectable="0" parent="hlIpUlzBis2L-mcIXATZ-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontColor=#00CC00;fontSize=14;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.4" as="geometry">
+            <mxPoint y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-27" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Edit configuration inside the repository" vertex="1">
+          <mxGeometry height="50" width="140" x="404.75" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-29" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-28" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Edit existing configuration" vertex="1">
+          <mxGeometry height="60" width="130" x="604.75" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Commit and push changes" vertex="1">
+          <mxGeometry height="50" width="130" x="153.25" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-33" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="End" vertex="1">
+          <mxGeometry height="60" width="100" x="168.25" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="hlIpUlzBis2L-mcIXATZ-34" edge="1" parent="1" source="hlIpUlzBis2L-mcIXATZ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="hlIpUlzBis2L-mcIXATZ-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -23,3 +23,13 @@ Project goal: A cross-platform runtime_components (from CS 193 homework 5) writt
 - Libraries: os, path
 - External tools: git, GitHub
 - Data storage: plain text for the configuration files and their backups
+
+## Diagrams
+
+### Configuration Install Flow
+
+![Configuration install flow chart](install_flow_diagram.svg)
+
+### User Flow
+
+![User flow chart](user_flow_diagram.svg)
