@@ -1,13 +1,13 @@
-from pathlib import PosixPath, WindowsPath
+from pathlib import Path
 
 
 class InstallationConfig:
     def __init__(
         self,
         filename: str,
-        windows_install_path: WindowsPath,
-        linux_install_path: PosixPath,
-        macos_install_path: PosixPath
+        windows_install_path: Path | None = None,
+        linux_install_path: Path | None = None,
+        macos_install_path: Path | None = None
     ):
         self.filename = filename
         self.windows_install_path = windows_install_path
