@@ -9,8 +9,8 @@ INSTALLATION_CONFIGS = (
         linux_install_path = Path.home() / ".config" / "dummy" / "dummy.conf",
     ),
     InstallationConfig(
-        filename = "doesnotexist.conf",
-        windows_install_path = Path.home() / ".config" / "dummy" / "doesnotexist.conf",
-        linux_install_path = Path.home() / ".config" / "dummy" / "doesnotexist.conf",
-    ),
+        filename = ".vimrc",
+        windows_install_path = Path.home() / "AppData" / "Local" / "nvim" / "init.vim",
+        linux_install_path = Path.home() / ".vimrc"
+    )
 )
