@@ -6,9 +6,9 @@ Project goal: A cross-platform runtime_components (from CS 193 homework 5) writt
 
 ## MVP Scope
 
-- [ ] Command line interface
-- [ ] Install Windows configs
-- [ ] Install Linux configs
+- [x] Command line interface
+- [x] Install Windows configs
+- [x] Install Linux configs
 
 ## Future plans
 
