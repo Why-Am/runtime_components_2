@@ -66,7 +66,7 @@ for config in INSTALLATION_CONFIGS:
                 print(f'"{config.filename}" not installed.')
                 continue
         else:
-            print(f'"{install_path}" already up to date.')
+            print("Already up to date.")
             config_count -= 1
             continue
     else:
