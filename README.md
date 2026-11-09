@@ -6,9 +6,9 @@ Project goal: A cross-platform runtime_components (from CS 193 homework 5) writt
 
 ## MVP Scope
 
-- [x] Command line interface
-- [x] Install Windows configs
-- [x] Install Linux configs
+- [ ] Command line interface
+- [ ] Install Windows configs
+- [ ] Install Linux configs
 
 ## Future plans
 
@@ -28,8 +28,8 @@ Project goal: A cross-platform runtime_components (from CS 193 homework 5) writt
 
 ### Configuration Install Flow
 
-![Configuration install flow chart](media/diagrams/install_flow_diagram.svg)
+![Configuration install flow chart](install_flow_diagram.svg)
 
 ### User Flow
 
-![User flow chart](media/diagrams/user_flow_diagram.svg)
+![User flow chart](user_flow_diagram.svg)
