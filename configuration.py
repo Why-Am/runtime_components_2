@@ -20,5 +20,9 @@ INSTALLATION_CONFIGS = (
     InstallationConfig(
         filename = ".bashrc",
         linux_install_path = Path.home() / ".bashrc"
-    )
+    ),
+    InstallationConfig(
+        filename = ".gdbinit",
+        linux_install_path = Path.home() / ".gdbinit"
+    ),
 )
