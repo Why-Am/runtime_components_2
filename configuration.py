@@ -16,5 +16,9 @@ INSTALLATION_CONFIGS = (
     InstallationConfig(
         filename = "Microsoft.PowerShell_profile.ps1",
         windows_install_path = Path.home() / "OneDrive" / "Documents" / "WindowsPowerShell" / "Microsoft.PowerShell_profile.ps1"
+    ),
+    InstallationConfig(
+        filename = ".bashrc",
+        linux_install_path = Path.home() / ".bashrc"
     )
 )
