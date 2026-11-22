@@ -1,4 +1,5 @@
 from pathlib import Path
+from sys import exit
 
 from library.installation_config_class import InstallationConfig
 
@@ -30,3 +31,6 @@ INSTALLATION_CONFIGS = (
         windows_install_path = Path.home() / ".config" / "kanata" / "kanata.kbd"
     )
 )
+
+if __name__ == "__main__":
+    exit("This file is meant to be edited, not ran")
