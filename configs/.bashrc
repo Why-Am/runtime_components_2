@@ -27,7 +27,12 @@ git_branch() {
     local b
     b=$(git symbolic-ref --short HEAD 2>/dev/null) && printf ' (%s)' "$b"
 }
-PS1='\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[33m\]$(git_branch)\[\e[0m\]\$ '
+
+# With "user@host":
+# PS1='\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[33m\]$(git_branch)\[\e[0m\]\$ '
+
+# Shortened:
+PS1='\[\e[34m\]\w\[\e[33m\]$(git_branch)\[\e[0m\] \$ '
 
 # ---------------------------------------------------------------------------
 # Aliases — shortcuts for commands you type constantly
