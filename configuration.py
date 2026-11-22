@@ -25,4 +25,8 @@ INSTALLATION_CONFIGS = (
         filename = ".gdbinit",
         linux_install_path = Path.home() / ".gdbinit"
     ),
+    InstallationConfig(
+        filename = "kanata.kbd",
+        windows_install_path = Path.home() / ".config" / "kanata" / "kanata.kbd"
+    )
 )

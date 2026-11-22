@@ -1,0 +1,89 @@
+#|
+Kanata config for Windows
+Needs at least cmd-allowed binary
+|#
+
+(defcfg
+  danger-enable-cmd yes
+)
+
+(defalias
+  ;; layers
+  rad   (layer-while-held ralted)
+  rsd   (multi rsft (layer-while-held ralt-shifted))
+
+  ;; keybinds
+  dw    C-del
+  cls   (multi (release-key rsft) (release-key lsft) A-f4)
+  pal   A-d ;; command palette
+
+  wt    (cmd wt) ;; open terminal
+  ;; lck (cmd Rundll32.exe user32.dll,LockWorkStation)
+
+  ;; mouse
+  ma↑   (movemouse-accel-up 10 1500 1 50)
+  ma←   (movemouse-accel-left 10 1500 1 50)
+  ma↓   (movemouse-accel-down 10 1500 1 50)
+  ma→   (movemouse-accel-right 10 1500 1 50)
+
+  ;; dashes
+  ;; en    (unicode –)
+  ;; em    (unicode —)
+)
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rctl
+
+       up
+  down left right
+)
+
+#|
+(deflayer base
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _
+
+       _
+  _    _    _
+)
+|#
+
+(deflayer base
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  esc  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              @rad _
+
+       _
+  _    _    _
+)
+
+(deflayer ralted
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    @cls _    end  lrld _    @ma← @ma↓ @ma↑ @ma→ _    _    _    _
+  _    home _    @dw  _    _    lft  down up   rght _    _    @wt
+  @rsd _    del  _    _    _    _    _    _    _    _    @rsd
+  _    _    _              mlft           _    _
+
+       _
+  _    _    _
+)
+
+(deflayer ralt-shifted
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _
+
+       _
+  _    _    _
+)
