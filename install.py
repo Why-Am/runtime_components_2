@@ -53,10 +53,10 @@ for config in INSTALLATION_CONFIGS:
     else:
         print(f'Installing "{config.filename}"...')
 
-    file_contents = filepath.read_text()
+    file_contents = filepath.read_text(encoding="utf-8")
 
     if install_path.is_file():
-        if file_contents != install_path.read_text():
+        if file_contents != install_path.read_text(encoding="utf-8"):
             # TODO prompt for now, but add backup capability later
             ans = input(
                 f'Contents of the existing file at "{install_path}" differ from that of the file '
@@ -72,7 +72,7 @@ for config in INSTALLATION_CONFIGS:
     else:
         install_path.parent.mkdir(parents=True, exist_ok=True)
 
-    install_path.write_text(file_contents)
+    install_path.write_text(file_contents, encoding="utf-8")
     print(f'"{install_path.name}" installed.')
     installed_count += 1
 
