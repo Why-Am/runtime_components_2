@@ -12,5 +12,9 @@ INSTALLATION_CONFIGS = (
         filename = ".vimrc",
         windows_install_path = Path.home() / "AppData" / "Local" / "nvim" / "init.vim",
         linux_install_path = Path.home() / ".vimrc"
+    ),
+    InstallationConfig(
+        filename = "Microsoft.PowerShell_profile.ps1",
+        windows_install_path = Path.home() / "OneDrive" / "Documents" / "WindowsPowerShell" / "Microsoft.PowerShell_profile.ps1"
     )
 )
