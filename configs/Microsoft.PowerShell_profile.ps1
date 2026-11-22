@@ -1,6 +1,7 @@
 # Aliases
-function Start-Python-REPL { uv run python }
-Set-Alias -Name py -Value Start-Python-REPL
+function py {
+    uv run python
+}
 
 function random-practice {
     uv run $HOME\Projects\random_practice\main.py
