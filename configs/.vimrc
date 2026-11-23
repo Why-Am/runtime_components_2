@@ -27,9 +27,10 @@ set wildmenu                " tab-completion menu for : commands
 " Indentation
 " ---------------------------------------------------------------------------
 " Match these numbers to your course's code standard.
-set tabstop=2               " a tab character displays as 2 columns
-set shiftwidth=2            " >> and auto-indent move by 2 columns
-set softtabstop=2           " the Tab key inserts 2 columns
+const tab_size=4            " constant; change this to set tab size
+set tabstop=tab_size        " a tab character displays as tab_size columns
+set shiftwidth=tab_size     " >> and auto-indent move by tab_size columns
+set softtabstop=tab_size    " the Tab key inserts tab_size columns
 set expandtab               " insert spaces, never tab characters
 set autoindent              " new lines keep the previous line's indent
 
