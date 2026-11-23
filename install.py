@@ -19,10 +19,7 @@ for arg in argv[1:]:
     if arg == "--dry-run":
         dry_run = True
     else:
-        exit(
-            f"Error: unrecognized argument '{arg}'\n" +
-            USAGE
-        )
+        exit(f"Error: unrecognized argument '{arg}'\n{USAGE}")
 
 if dry_run:
     print("Starting dry run (no files will be changed)...")
@@ -87,7 +84,7 @@ for config in INSTALLATION_CONFIGS:
 
     if not dry_run:
         install_path.write_text(file_contents, encoding="utf-8")
-    
+
     print(f"'{install_path.name}' installed.")
     installed_count += 1
 
