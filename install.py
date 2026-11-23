@@ -2,17 +2,30 @@
 
 import platform
 from pathlib import Path
-from sys import exit, stderr
+from sys import argv, exit, stderr
 
 from configuration import INSTALLATION_CONFIGS
 
-USAGE = "USAGE: install.py"
+USAGE = "USAGE: install.py [--dry-run]"
 
 WINDOWS = "Windows"
 LINUX = "Linux"
 # MACOS = "Darwin"  # Not implemented (cannot test)
 
 CONFIGS_DIR_PATH = Path(__file__).parent / "configs"
+
+dry_run = False
+for arg in argv[1:]:
+    if arg == "--dry-run":
+        dry_run = True
+    else:
+        exit(
+            f'Error: unrecognized argument "{arg}"\n' +
+            USAGE
+        )
+
+if dry_run:
+    print("Starting dry run (no files will be changed)...")
 
 CURRENT_OS = platform.system()
 if CURRENT_OS not in (WINDOWS, LINUX):
@@ -69,10 +82,18 @@ for config in INSTALLATION_CONFIGS:
             config_count -= 1
             continue
     else:
-        install_path.parent.mkdir(parents=True, exist_ok=True)
+        if not dry_run:
+            install_path.parent.mkdir(parents=True, exist_ok=True)
 
-    install_path.write_text(file_contents, encoding="utf-8")
+    if not dry_run:
+        install_path.write_text(file_contents, encoding="utf-8")
+    
     print(f'"{install_path.name}" installed.')
     installed_count += 1
 
-print(f"Installed {installed_count}/{config_count} configs.")
+print("---")
+if dry_run:
+    print("Dry run result:")
+else:
+    print("Result:")
+print(f"Installed {installed_count}/{config_count} installable configs.")
