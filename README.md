@@ -2,7 +2,7 @@
 
 Cross-platform configs
 
-Project goal: A cross-platform runtime_components (from CS 193 homework 5) written in Python that allows you to install configs on Windows, Linux, and macOS.
+Project goal: A cross-platform runtime_components (from CS 193 homework 5) written in Python that allows you to install configs on Windows and Linux.
 
 ## MVP Scope
 
