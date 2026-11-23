@@ -20,7 +20,7 @@ for arg in argv[1:]:
         dry_run = True
     else:
         exit(
-            f'Error: unrecognized argument "{arg}"\n' +
+            f"Error: unrecognized argument '{arg}'\n" +
             USAGE
         )
 
@@ -29,7 +29,7 @@ if dry_run:
 
 CURRENT_OS = platform.system()
 if CURRENT_OS not in (WINDOWS, LINUX):
-    exit(f"Error: the operating system {CURRENT_OS} is not supported.")
+    exit(f"Error: the operating system '{CURRENT_OS}' is not supported.")
 
 config_count = 0
 installed_count = 0
@@ -50,20 +50,20 @@ for config in INSTALLATION_CONFIGS:
     filepath = CONFIGS_DIR_PATH / config.filename
     if not filepath.exists():
         print(
-            f'Error: could not find file "{config.filename}" at "{filepath}".',
+            f"Error: could not find file '{config.filename}' at '{filepath}'.",
             file=stderr,
         )
         print("Continuing.")
         continue
     if filepath.is_dir():
-        print(f'Error: "{filepath}" is a directory, not a file.', file=stderr)
+        print(f"Error: '{filepath}' is a directory, not a file.", file=stderr)
         print("Continuing.")
         continue
 
     if config.filename != install_path.name:
-        print(f'Installing "{config.filename}" as "{install_path.name}"...')
+        print(f"Installing '{config.filename}' as '{install_path.name}'...")
     else:
-        print(f'Installing "{config.filename}"...')
+        print(f"Installing '{config.filename}'...")
 
     file_contents = filepath.read_text(encoding="utf-8")
 
@@ -71,11 +71,11 @@ for config in INSTALLATION_CONFIGS:
         if file_contents != install_path.read_text(encoding="utf-8"):
             # TODO prompt for now, but add backup capability later
             ans = input(
-                f'Contents of the existing file at "{install_path}" differ from that of the file '
+                f"Contents of the existing file at '{install_path}' differ from that of the file "
                 + "being installed. Overwrite (y/n)? "
             )
             if ans.lower() != "y":
-                print(f'"{config.filename}" not installed.')
+                print(f"'{config.filename}' not installed.")
                 continue
         else:
             print("Already up to date.")
@@ -88,7 +88,7 @@ for config in INSTALLATION_CONFIGS:
     if not dry_run:
         install_path.write_text(file_contents, encoding="utf-8")
     
-    print(f'"{install_path.name}" installed.')
+    print(f"'{install_path.name}' installed.")
     installed_count += 1
 
 print("---")
