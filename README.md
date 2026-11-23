@@ -12,10 +12,10 @@ Project goal: A cross-platform runtime_components (from CS 193 homework 5) writt
 
 ## Future plans
 
+- [x] Dry run
 - [ ] Ad hoc install instructions
 - [ ] Backup overwritten files
 - [ ] Install macOS configs
-- [ ] Dry run
 
 ## Tech Stack
 
