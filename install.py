@@ -16,8 +16,7 @@ CONFIGS_DIR_PATH = Path(__file__).parent / "configs"
 
 CURRENT_OS = platform.system()
 if CURRENT_OS not in (WINDOWS, LINUX):
-    print(f"Error: the operating system {CURRENT_OS} is not supported.", file=stderr)
-    exit(1)
+    exit(f"Error: the operating system {CURRENT_OS} is not supported.")
 
 config_count = 0
 installed_count = 0
