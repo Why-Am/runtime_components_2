@@ -69,6 +69,8 @@ for config in INSTALLATION_CONFIGS:
     if install_path.is_file():
         if file_contents != install_path.read_text(encoding="utf-8"):
             # TODO prompt for now, but add backup capability later
+            # This protects against accidentally overwriting an existing file that the user may not
+            # have known about
             ans = input(
                 f"Contents of the existing file at '{install_path}' differ from that of the file "
                 + "being installed. Overwrite (y/n)? "
