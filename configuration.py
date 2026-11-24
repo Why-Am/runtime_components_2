@@ -1,3 +1,5 @@
+"""Editable configuration for install.py"""
+
 from pathlib import Path
 from sys import exit
 
