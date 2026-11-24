@@ -28,8 +28,11 @@ CURRENT_OS = platform.system()
 if CURRENT_OS not in (WINDOWS, LINUX):
     exit(f"Error: the operating system '{CURRENT_OS}' is not supported.")
 
-config_count = 0
-installed_count = 0
+# A config is pending if it's not already up to date in its installed location.
+# We want to keep track of these in particular because these are where issues may arise,
+# e.g. missing source files, conflicts, failed writes.
+pending_config_count = 0
+successfully_installed_count = 0
 
 for config in INSTALLATION_CONFIGS:
     if CURRENT_OS == WINDOWS:
@@ -42,7 +45,7 @@ for config in INSTALLATION_CONFIGS:
     if install_path is None:
         continue
 
-    config_count += 1
+    pending_config_count += 1
 
     filepath = CONFIGS_DIR_PATH / config.filename
     if not filepath.exists():
@@ -80,7 +83,7 @@ for config in INSTALLATION_CONFIGS:
                 continue
         else:
             print("Already up to date.")
-            config_count -= 1
+            pending_config_count -= 1
             continue
     else:
         if not dry_run:
@@ -90,11 +93,13 @@ for config in INSTALLATION_CONFIGS:
         install_path.write_text(file_contents, encoding="utf-8")
 
     print(f"'{install_path.name}' installed.")
-    installed_count += 1
+    successfully_installed_count += 1
 
 print("---")
 if dry_run:
     print("Dry run result:")
 else:
     print("Result:")
-print(f"Installed {installed_count}/{config_count} installable configs.")
+print(
+    f"Installed {successfully_installed_count}/{pending_config_count} pending configs."
+)
