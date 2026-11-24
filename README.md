@@ -1,8 +1,7 @@
 # runtime_components_2
 
-Cross-platform configs
+Cross-platform config file manager
 
-Project goal: A cross-platform runtime-components (from CS 193 homework 5) written in Python that allows you to install configs on Windows and Linux.
 ## The Problem
 
 [runtime-components](https://github.com/Why-Am/runtime-components) (from CS 193 homework 5) is a cool idea but it does not work on Windows.
