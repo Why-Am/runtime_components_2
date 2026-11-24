@@ -58,6 +58,8 @@ for config in INSTALLATION_CONFIGS:
         continue
 
     if config.filename != install_path.name:
+        # To aid with cross-compatibility, the filename of the final installed file is allowed to
+        # differ from that of the file stored in this repository.
         print(f"Installing '{config.filename}' as '{install_path.name}'...")
     else:
         print(f"Installing '{config.filename}'...")
