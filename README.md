@@ -2,6 +2,10 @@
 
 Cross-platform config file manager
 
+## Demo
+
+https://youtu.be/MK-49d53CLQ
+
 ## The Problem
 
 [runtime-components](https://github.com/Why-Am/runtime-components) (from CS 193 homework 5) is a cool idea but it does not work on Windows.
