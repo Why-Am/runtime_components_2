@@ -8,6 +8,22 @@ Cross-platform config file manager
 
 I use Windows. I use it because it is the best operating system in 2026, hands down. And I need my config files here too.
 
+## How It Works
+
+- Config files are kept in `configs/`.
+- Edit `configuration.py` to specify the install paths for each config file on each operating system.
+- Run `install.py` to install the relevant configs.
+
+### Diagrams
+
+### Configuration Install Flow
+
+![Configuration install flow chart](media/diagrams/install_flow_diagram.svg)
+
+### User Flow
+
+![User flow chart](media/diagrams/user_flow_diagram.svg)
+
 ## MVP Scope
 
 - [x] Command line interface
@@ -27,13 +43,3 @@ I use Windows. I use it because it is the best operating system in 2026, hands d
 - Libraries: os, path
 - External tools: git, GitHub
 - Data storage: plain text for the configuration files and their backups
-
-## Diagrams
-
-### Configuration Install Flow
-
-![Configuration install flow chart](media/diagrams/install_flow_diagram.svg)
-
-### User Flow
-
-![User flow chart](media/diagrams/user_flow_diagram.svg)
