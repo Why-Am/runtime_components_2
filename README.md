@@ -55,7 +55,7 @@ I use Windows. I use it because it is the best operating system in 2026, hands d
 - [x] Install Windows configs
 - [x] Install Linux configs
 
-### Future plans
+### Future Plans
 
 - [x] Dry run
 - [x] Install macOS configs
