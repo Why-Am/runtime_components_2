@@ -24,6 +24,13 @@ I use Windows. I use it because it is the best operating system in 2026, hands d
 
 ![User flow chart](media/diagrams/user_flow_diagram.svg)
 
+## Tech Stack
+
+- Language: Python
+- Libraries: platform, pathlib, sys, dataclasses
+- External tools: git, GitHub
+- Data storage: plain text for the configuration files and their backups
+
 ## MVP Scope
 
 - [x] Command line interface
@@ -36,10 +43,3 @@ I use Windows. I use it because it is the best operating system in 2026, hands d
 - [ ] Ad hoc install instructions
 - [ ] Backup overwritten files
 - [ ] Install macOS configs
-
-## Tech Stack
-
-- Language: Python
-- Libraries: os, path
-- External tools: git, GitHub
-- Data storage: plain text for the configuration files and their backups
