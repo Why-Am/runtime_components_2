@@ -32,11 +32,11 @@ I use Windows. I use it because it is the best operating system in 2026, hands d
 
 ### Diagrams
 
-### Configuration Install Flow
+#### Configuration Install Flow
 
 ![Configuration install flow chart](media/diagrams/install_flow_diagram.svg)
 
-### User Flow
+#### User Flow
 
 ![User flow chart](media/diagrams/user_flow_diagram.svg)
 
