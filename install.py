@@ -10,7 +10,7 @@ USAGE = "USAGE: install.py [--dry-run]"
 
 WINDOWS = "Windows"
 LINUX = "Linux"
-# MACOS = "Darwin"  # Not implemented (cannot test)
+MACOS = "Darwin"
 
 CONFIGS_DIR_PATH = Path(__file__).parent / "configs"
 
@@ -25,7 +25,7 @@ if dry_run:
     print("Starting dry run (no files will be changed)...")
 
 CURRENT_OS = platform.system()
-if CURRENT_OS not in (WINDOWS, LINUX):
+if CURRENT_OS not in (WINDOWS, LINUX, MACOS):
     exit(f"Error: the operating system '{CURRENT_OS}' is not supported.")
 
 # A config is pending if it's not already up to date in its installed location.
@@ -39,6 +39,8 @@ for config in INSTALLATION_CONFIGS:
         install_path = config.windows_install_path
     elif CURRENT_OS == LINUX:
         install_path = config.linux_install_path
+    elif CURRENT_OS == MACOS:
+        install_path = config.macos_install_path
     else:
         raise AssertionError("Unreachable")
 

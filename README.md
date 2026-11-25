@@ -46,6 +46,6 @@ I use Windows. I use it because it is the best operating system in 2026, hands d
 ### Future plans
 
 - [x] Dry run
+- [x] Install macOS configs
 - [ ] Ad hoc install instructions
 - [ ] Backup overwritten files
-- [ ] Install macOS configs

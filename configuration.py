@@ -10,6 +10,7 @@ INSTALLATION_CONFIGS = (
         filename = "dummy.conf",
         windows_install_path = Path.home() / ".config" / "dummy" / "dummy.conf",
         linux_install_path = Path.home() / ".config" / "dummy" / "dummy.conf",
+        macos_install_path = Path.home() / ".config" / "dummy" / "dummy.conf"
     ),
     InstallationConfig(
         filename = ".vimrc",
