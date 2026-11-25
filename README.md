@@ -16,7 +16,9 @@ Cross-platform config file manager
 
 ## Demo
 
-TODO
+https://youtu.be/MK-49d53CLQ
+
+Note: macOS support was added after the video was recorded.
 
 ## The Problem
 
