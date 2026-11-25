@@ -6,15 +6,7 @@ Cross-platform config file manager
 
 [runtime-components](https://github.com/Why-Am/runtime-components) (from CS 193 homework 5) is a cool idea but it does not work on Windows.
 
-I use Windows.
-
-I use Windows programs that use config files.
-
-My vim config is the same between Windows and Linux, but one is stored in `AppData` and the other is stored in `$HOME`.
-
-I want unity.
-
-Also, bash is hard to read.
+I use Windows. I use it because it is the best operating system in 2026, hands down. And I need my config files here too.
 
 ## MVP Scope
 
