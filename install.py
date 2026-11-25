@@ -69,6 +69,7 @@ for config in INSTALLATION_CONFIGS:
     else:
         print(f"Installing '{config.filename}'...")
 
+    # Standardize on utf-8
     file_contents = filepath.read_text(encoding="utf-8")
 
     if install_path.is_file():
