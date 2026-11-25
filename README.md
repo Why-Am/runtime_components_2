@@ -31,13 +31,15 @@ I use Windows. I use it because it is the best operating system in 2026, hands d
 - External tools: git, GitHub
 - Data storage: plain text for the configuration files and their backups
 
-## MVP Scope
+## Roadmap
+
+### MVP Scope
 
 - [x] Command line interface
 - [x] Install Windows configs
 - [x] Install Linux configs
 
-## Future plans
+### Future plans
 
 - [x] Dry run
 - [ ] Ad hoc install instructions
