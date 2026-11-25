@@ -28,9 +28,9 @@ set wildmenu                " tab-completion menu for : commands
 " ---------------------------------------------------------------------------
 " Match these numbers to your course's code standard.
 const tab_size=4            " constant; change this to set tab size
-set tabstop=tab_size        " a tab character displays as tab_size columns
-set shiftwidth=tab_size     " >> and auto-indent move by tab_size columns
-set softtabstop=tab_size    " the Tab key inserts tab_size columns
+let &tabstop=tab_size       " a tab character displays as tab_size columns
+let &shiftwidth=tab_size    " >> and auto-indent move by tab_size columns
+let &softtabstop=tab_size   " the Tab key inserts tab_size columns
 set expandtab               " insert spaces, never tab characters
 set autoindent              " new lines keep the previous line's indent
 
