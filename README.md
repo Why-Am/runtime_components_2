@@ -4,7 +4,7 @@ Cross-platform config file manager
 
 ## Demo
 
-https://youtu.be/MK-49d53CLQ
+TODO
 
 ## The Problem
 
