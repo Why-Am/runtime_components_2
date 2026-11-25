@@ -2,6 +2,18 @@
 
 Cross-platform config file manager
 
+## Setup Instructions
+
+1. [Install Python](https://www.python.org/downloads/) if it's not already installed
+1. The next step differs depending on whether you want to use this project for yourself or just want to test it out:
+    - If you just want to test it out:
+        1. Clone the repository
+    - If you want to use this project to manage your own config files and save them to GitHub:
+        1. Click the "Use this template" button or [this link](https://github.com/Why-Am/runtime_components_2/generate) to create your own repository based on this one
+        1. Clone your repository
+1. Add your configs to `configs/` and edit `configuration.py` to your liking (you probably don't want to install my configs).
+1. Use Python to run `install.py`
+
 ## Demo
 
 TODO
